@@ -25,15 +25,15 @@ My pipeline consisted of following 6 steps:
 - the images are converted to grayscale 
 <img src="test_images_output/grayscale_solidWhiteRight.jpg" width="400"/>
 - the grayscale images are smoothed using gaussian blur function with kernel size of 5
-![grayscale_blur_solidWhiteRight](test_images_output/grayscale_blur_solidWhiteRight.jpg)
+<img src="test_images_output/grayscale_blur_solidWhiteRight.jpg" width="400"/>
 - the canny function is used to detect the edges with low_threshold = 50 and high_threshold = 220
-![edges_solidWhiteRight](test_images_output/edges_solidWhiteRight.jpg)
+<img src="test_images_output/edges_solidWhiteRight.jpg" width="400"/>
 - masked specific region of the images since we want only to get the edges on this region
-![edges_masked_solidWhiteRight](test_images_output/edges_masked_solidWhiteRight.jpg)
+<img src="test_images_output/edges_masked_solidWhiteRight.jpg" width="400"/>
 - hough_lines is used to find lines on this masked region and draw it
-![img_line_solidWhiteRight](test_images_output/img_line_solidWhiteRight.jpg)
+<img src="test_images_output/img_line_solidWhiteRight.jpg" width="400"/>
 - then the original image is combined with the image from the last process (hough lines) 
-![solidWhiteRight](test_images_output/solidWhiteRight.jpg)
+<img src="test_images_output/solidWhiteRight.jpg" width="400"/>
 
 The result is saved again as jpg file in output directory
 

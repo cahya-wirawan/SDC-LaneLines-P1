@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of following 6 steps:
 - the images are converted to grayscale 
-![grayscale_solidWhiteRight][test_images_output/grayscale_solidWhiteRight.jpg]
+![grayscale_solidWhiteRight](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 - the grayscale images are smoothed using gaussian blur function with kernel size of 5
 ![grayscale_blur_solidWhiteRight][test_images_output/grayscale_blur_solidWhiteRight.jpg]
 - the canny function is used to detect the edges with low_threshold = 50 and high_threshold = 220

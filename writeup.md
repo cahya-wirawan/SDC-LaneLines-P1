@@ -52,6 +52,7 @@ In addition, the slopes between -0.5 and 0.5 are ignored to fix some issues in t
 - the pipeline create a straight line, not a curve
 - The shadow of a tree on the street can make a problem like in the challenge video
 - it creates only left line and right line, which is not always true (both lines could have the same direction)
+- all videos should be resized to the fix size
 
 ### 3. Suggest possible improvements to your pipeline
 

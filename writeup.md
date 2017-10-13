@@ -23,13 +23,17 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of following 6 steps:
 - the images are converted to grayscale 
-![grayscale_solidWhiteRight](test_images_output/grayscale_solidWhiteRight.jpg =400x)
+![grayscale_solidWhiteRight](test_images_output/grayscale_solidWhiteRight.jpg)
 - the grayscale images are smoothed using gaussian blur function with kernel size of 5
-![grayscale_blur_solidWhiteRight](test_images_output/grayscale_blur_solidWhiteRight.jpg =400x)
+![grayscale_blur_solidWhiteRight](test_images_output/grayscale_blur_solidWhiteRight.jpg)
 - the canny function is used to detect the edges with low_threshold = 50 and high_threshold = 220
+![edges_solidWhiteRight](test_images_output/edges_solidWhiteRight.jpg)
 - masked specific region of the images since we want only to get the edges on this region
+![edges_masked_solidWhiteRight](test_images_output/edges_masked_solidWhiteRight.jpg)
 - hough_lines is used to find lines on this masked region and draw it
+![img_line_solidWhiteRight](test_images_output/img_line_solidWhiteRight.jpg)
 - then the original image is combined with the image from the last process (hough lines) 
+![solidWhiteRight](test_images_output/solidWhiteRight.jpg)
 
 The result is saved again as jpg file in output directory
 
@@ -42,11 +46,6 @@ following steps:
 - calculate the start and end of the right line using the average of right slopes
 - draw the left and right line calculated before
 
-
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
